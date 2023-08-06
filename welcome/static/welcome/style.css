@@ -1,0 +1,364 @@
+/*-------GENERAL------------*/
+.btn-primary {
+    color: white;
+    background-color: #ce3232;
+    border-radius: 15px;
+    outline: none;
+  
+}
+  
+  /* .btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+  } */
+
+html, body {
+  min-height: 100vh;
+}
+
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*------- NAV BAR active link ------------*/
+.nav-item.active a {
+  position: relative;
+  color:white !important;
+}
+  
+.nav-item.active a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(173, 173, 177);  
+}
+  
+/*-------HOME PAGE - INTRO SECTION------------*/
+
+  .intro-title {
+      min-height: 100vh;
+      /* width: 100%; */ 
+      /* background-image: linear-gradient(to right, rgba(5, 117, 230, 0.5), rgba(0, 242, 96, 0.5)), url("tutor-background.jpeg"); */
+      background-image: linear-gradient(to right, rgba(5, 117, 230, 0.5), rgba(0, 242, 96, 0.5)), url("images/tutor-background.jpeg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  }
+  
+  .start-button {
+    background-color: #ce3232;;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  
+  .start-button:hover,
+  .section-btn:focus {
+    background: #393939;
+    border-color: transparent;
+    color: white;
+  }
+  
+  .text-box {
+      width: 90%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  .text-box h1 {
+      font-size: 62px;
+  }
+  .text-box p {
+      margin: 10px 0 40px;
+      font-size: 20px;
+      color: #fff;
+  }
+  
+  
+  /*-------HOME PAGE - CONTACT US------------*/
+
+  
+  #contact {
+      background: #00F260;  /* fallback for old browsers */
+      /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      text-align: center;
+  }
+  
+  #contact .section-title h2 {
+      color: #ffffff;
+  }
+  
+  .google-map {
+      border-radius: 100%;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+  
+  .google-map iframe {
+      border: 0;
+      width: 300px;
+      height: 300px;
+  }
+  
+  #cf-about::after {
+      content: "\25BC";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+  }
+  
+  #contact .form-control {
+      border: 0;
+      border-radius: 5px;
+      box-shadow: none;
+      color: rgba(20,20,20,0.5);
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 15px;
+      padding-left: 8px;
+  }
+  
+  #contact .form-submit {
+      background-color: #ce3232;;
+      color: white;
+      font-size: 16px;
+      padding: 15px;
+      margin-top: 3rem;
+      border-radius: 15px;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      margin-left: 0px;
+  }
+  
+  #contact .form-submit:hover,
+  #contact .form-submit:focus {
+      background: #393939;
+      border-color: transparent;
+      color: white;
+  }
+  
+  #contact input,
+  #contact select {
+      height: 55px;
+    }
+  
+  #contact select {
+      color: rgba(20,20,20,0.5);
+    }
+  
+  #contact input[type='submit'] {
+      background: #ce3232;
+      border-radius: 100px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  
+  
+  
+  /*-------HOME PAGE - ABOUT SECTION------------*/
+    
+  .about {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .about-icons .row {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+  
+  .about-icons .row div {
+    text-align: center; 
+    flex-basis: 20%; 
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+/*-------SELECT CLASS------------*/
+
+.mainSelectClassesContainer, .search-name {
+    /* width: 406px; */
+    width: 700px; 
+    max-width: 700px;
+    margin: 0 auto;
+    /* height: 100vh;
+    min-height: 100%;
+    position: relative; */
+}
+
+.white-box {
+  width: 700px;
+  padding: 3rem;
+  background: #fff;
+  box-shadow: 
+      0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+      0px 4px 20px rgba( 0,0,0,0.33 );
+  border-radius: 5px;
+  display: table;
+  position: static;
+}
+
+.white-box .sep {
+  height: 2px;
+  background: #e8e8e8;
+  margin: 35px -40px;
+}
+
+/* course pneumonic */
+.dropdown {
+  width: 150px;
+  position: relative;
+  cursor: pointer;
+  padding: 1rem;
+  border: 2px solid #0575e680;
+  background-color: #f2f2f2;
+  color: #000000;
+
+
+}
+
+/* course number (optional), course name */
+.search {
+  width: 350px;
+  height: 100%;
+  padding: 1rem;
+  /* border-radius: 5px; */
+  left:5px;
+  border:3px solid #0575e680;
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+/* search icon */
+.search-icon {
+  width: 50px;
+  height: 100%;
+  padding-top: 1.2rem;
+  padding-bottom: 1.3rem;
+  background-color:#0575e680;
+  color:white;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  text-decoration: none;
+}
+
+.search-icon:hover {
+  background-color: #0575e6;
+}
+
+.space{
+  padding: 2rem;
+}
+
+/* -------------------- ADD BIO -------------------- */
+
+
+/*-------CHANGE RATE------------*/
+
+.rate-container {
+  /* width: 406px; */
+  width: 700px; 
+  max-width: 700px;
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+
+}
+
+.rate-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 200px;
+  /* width: 100%; */
+  box-sizing: border-box;
+}
+
+.rate-text {
+	font-size: 20px;
+  margin-bottom: 5px;
+	/* font-weight: bold; */
+}
+  
+/* --------------------SELECT TIME-------------------- */
+.times-container {
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  overflow-y: auto; 
+}
+/* 
+table {
+  font-size: 14px;
+  margin: 0 auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+td:first-child::after {
+  td:first-child::after {
+  content: "\f017";
+  font-family: FontAwesome;
+  margin-left: 5px;
+} 
+
+th {
+  background-color: #5ba0e6;
+  color: white;
+}
+
+td {
+  border: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.5);
+  cursor: pointer;
+} */
+
+
+/*-------FOOTER------------*/
+  
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right:0;
+  width: 100%;
+  height: 65px;
+}

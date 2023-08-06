@@ -1,0 +1,196 @@
+/*-------GENERAL------------*/
+.btn-primary {
+    color: white;
+    background-color: #ce3232;
+    border-radius: 15px;
+    outline: none;
+  
+  }
+  
+  /* .btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+  } */
+  
+  /*-------INTRO SECTION------------*/
+  
+  /* body {
+      color: #828bb2;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1.625em;
+      position: relative; } */
+    
+  .intro-title {
+      min-height: 100vh;
+      /* width: 100%; */ 
+      /* background-image: linear-gradient(to right, rgba(5, 117, 230, 0.5), rgba(0, 242, 96, 0.5)), url("tutor-background.jpeg"); */
+      background-image: linear-gradient(to right, rgba(5, 117, 230, 0.5), rgba(0, 242, 96, 0.5)), url("images/tutor-background.jpeg");
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  }
+  
+  .start-button {
+    background-color: #ce3232;;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  
+  .start-button:hover,
+  .section-btn:focus {
+    background: #393939;
+    border-color: transparent;
+    color: white;
+  }
+  
+  .text-box {
+      width: 90%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  .text-box h1 {
+      font-size: 62px;
+  }
+  .text-box p {
+      margin: 10px 0 40px;
+      font-size: 20px;
+      color: #fff;
+  }
+  
+   /*---------------------------------------
+        CONTACTS             
+    -----------------------------------------*/
+  
+  #contact {
+      background: #00F260;  /* fallback for old browsers */
+      /* background: -webkit-linear-gradient(to right, #0575E6, #00F260);  Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      text-align: center;
+  }
+  
+  #contact .section-title h2 {
+      color: #ffffff;
+  }
+  
+  .google-map {
+      border-radius: 100%;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      margin: 0 auto;
+  }
+  
+  .google-map iframe {
+      border: 0;
+      width: 300px;
+      height: 300px;
+  }
+  
+  #cf-about::after {
+      content: "\25BC";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+  }
+  
+  #contact .form-control {
+      border: 0;
+      border-radius: 5px;
+      box-shadow: none;
+      color: rgba(20,20,20,0.5);
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 15px;
+      padding-left: 8px;
+  }
+  
+  #contact .form-submit {
+      background-color: #ce3232;;
+      color: white;
+      font-size: 16px;
+      padding: 15px;
+      margin-top: 3rem;
+      border-radius: 15px;
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+  }
+  
+  #contact .form-submit:hover,
+  #contact .form-submit:focus {
+      background: #393939;
+      border-color: transparent;
+      color: white;
+  }
+  
+  #contact input,
+  #contact select {
+      height: 55px;
+    }
+  
+  #contact select {
+      color: rgba(20,20,20,0.5);
+    }
+  
+  #contact input[type='submit'] {
+      background: #ce3232;
+      border-radius: 100px;
+      color: #ffffff;
+      font-weight: 500;
+    }
+  
+  
+  
+    /*-------ABOUT SECTION------------*/
+    
+  .about {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    width: 50%;
+    margin: 0 auto;
+  
+  
+  }
+  
+  .about-icons .row {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+  }
+  
+  .about-icons .row div {
+    text-align: center; 
+    flex-basis: 20%; 
+    display: inline-block;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  
+  
+  
+ /*-------FOOTER------------*/
+  
+.footer {
+      position: relative;
+      bottom: 0;
+      width: 100%;
+ }

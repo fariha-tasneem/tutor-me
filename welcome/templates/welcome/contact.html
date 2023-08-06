@@ -1,0 +1,114 @@
+{% extends "welcome/base.html" %}
+{% load static %}
+
+{% load bootstrap5 %}
+
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% bootstrap_messages %}
+
+{% load socialaccount %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'welcome/style.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d98a8c3ef0.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'welcome/style.css' %}">
+
+  </head>
+</html>
+
+<body>
+    <section id="contact" data-stellar-background-ratio="0.5">
+        <div class="container">
+                <div class="row">
+  
+                    <div class="col-md-12 col-sm-12">
+                        <div class="section-title">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+  
+                    <div class="col-md-8 col-sm-8">
+                          
+                        <form id="contact-form" action="" role="form" method="POST">
+                            {% csrf_token %}
+                            <div class="col-md-6 col-sm-6">
+                                <input type="text" class="form-control" placeholder="Full Name" id="cf-name" name="cf-name" required="">
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <select class="form-control" id="cf-about" name="cf-about">
+                                     <option>About You</option>
+                                     <option>Student</option>
+                                     <option>Tutor</option>
+                                     <option>Other</option>
+                                </select>
+                           </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <input type="email" class="form-control" placeholder="Your Email" id="cf-email" name="cf-email" required="">
+                            </div>
+
+                            <div class="col-md-6 col-sm-6">
+                                <input type="tel" class="form-control" placeholder="Subject" id="cf-number" name="cf-number" required="">
+                            </div>
+  
+                            <div class="col-md-12 col-sm-12">
+                                <textarea class="form-control" rows="6" placeholder="Message" id="cf-message" name="cf-message" required=""></textarea>
+                            </div>
+  
+                            <div class="col-md-4 col-sm-12">
+                                <button type="submit" class="form-submit" name="submit">Send Message</button>
+                            </div>
+  
+                        </form>
+                    </div>
+  
+                    <div class="col-md-4 col-sm-4">
+                        <div class="google-map">
+                            <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.663706355263!2d-78.51302922017962!3d38.03161877981289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b387de913a5b07%3A0xb964f7ee988d1b26!2sRice%20Hall!5e0!3m2!1sen!2sus!4v1679765876403!5m2!1sen!2sus" allowfullscreen></iframe>
+                        </div>
+                    </div>
+  
+                </div>
+        </div>
+    </section>
+    <!-- {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %} -->
+
+             
+</body>
+
+<!--Contact form-->
+<!-- <div style="margin:80px">
+    <h1>Contact</h1>
+    <h4>Contact us directly if you have any questions</h4>
+    <p>
+        Please write your name, email address and a message below if you have any questions.
+        One of our staff members will be happy to contact you directly and answer your questions as soon as possible. 
+    </p>
+    <form method="post">
+    {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Submit</button>
+    </form>
+</div> -->
+
+{% endblock content %}
